@@ -1,0 +1,149 @@
+#home {
+    font-family: Tangerine, sans-serif;
+}
+
+.portfolio-img {
+    width: 30%;
+    height: 20%;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin-left: 65%;
+}
+
+.project-item {
+    width: 60%;
+    height: auto;
+    border: 5px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #6633ff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 10 auto;
+    padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: rgb(255, 0, 0);
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+    transition: all .5s;
+}
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.photo-section {
+    background-color: lightgray;
+    padding: 5%;
+    left: 10%;
+}
+
+#project-portfolio h3 {
+    text-align: center;
+}
+
+#contact-info ul {
+    list-style: none;
+    display: inline;
+}
+
+#contact-info li {
+    padding-top: 1.5%;
+}
+
+#contact-info ul li a:hover {
+    background-color: crimson;
+    color: white;
+}
+
+#contact-me {
+    text-align: center;
+}
+
+#contact-me h3 {
+    margin-top: 20%;
+}
+
+.skills-section {
+    text-align: center;
+}
+
+.skills-section h2 {
+    margin-left: 1em;
+    font-family: Tangerine, sans-serif;
+    font-size: 80px;
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+    text-decoration-style: wavy;
+    text-decoration-color: royalblue;
+}
+
+.skills-section ul {
+    list-style: none;
+    font-weight: bold;
+}
+
+.skills-section li {
+    margin-top: 1rem;
+}
+
+.flex {
+    display: -ms-flexbox;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #home {
+        text-align: center;
+    }
+    .portfolio-img {
+        margin-left: 30%;
+    }
+    #about-me {
+        text-align: center;
+    }
+    .nav {
+        display: block;
+        width: 60px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav a {
+        display: block;
+    }
+    nav {
+        margin-left: 40%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #home {
+        text-align: center;
+    }
+    table {
+        text-align: center;
+    }
+    .skills-section li {
+        font-size: 30px;
+    }
+}
