@@ -4,6 +4,16 @@
 
 ​ body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: #093145;
+}
+
+html,
+body {
+    height: 100%;
 }
 
 #home {
