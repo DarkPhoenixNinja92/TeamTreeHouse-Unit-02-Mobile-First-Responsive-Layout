@@ -5,97 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile-first Responsive Project</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Mobile Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="flex">
         <header>
-            <h1 id="home top">Shaun Pour</h1>
             <nav class="main-nav">
-                <ul class="nav">
-                    <li class="nav-link"><a class="name" href="#home">Home</a></li>
-                    <li class="nav-link"><a class="name" href="#project-portfolio">Portfolio</a></li>
-                    <li class="nav-link"><a class="name" href="#skills-section">Skills</a></li>
-                    <li class="nav-link "><a class="name " href="#contact-me ">Contact</a></li>
-                </ul>
+                <div class="nav-wrapper">
+                    <ul class="nav" id="nav-mobile">
+                        <li class="nav-link"><a class="active" href="#home">Home</a></li>
+                        <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                        <li class="nav-link"><a href="#hobbies">Hobbies</a></li>
+                        <li class="nav-link"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <h1 id="home" class="my-name">Shaun Pour</h1>
+                </div>
             </nav>
         </header>
-        <section id="description">
-            <p id="about-me">Hi! I'm a front-end developer who loves CSS, Responsive Design and just playing around with web development in general. I recently finished learning front-end web development<br> from Treehouse and am excited to put my new skills to use.</p>
-            <div class="photo-section">
-                <img class="portfolio-img" src="images/Me.jpg" alt="me">
-            </div>
-        </section>
-        <section id="project-portfolio">
-            <h3>Portfolio:</h3>
+        <main>
+
+            <p class="description">Hi! I'm a front-end web developer student who loves learning<br> and trying new things! I recently finished learning front-end<br> development at Treehouse and am eager to put my skills to use.</p>
+            <img class="portrait" src="images/Me.jpg" alt="image of me">
+
+            <h2 id="portfolio" class="portfolio-title">Portfolio</h2>
             <div class="container clearfix">
                 <div class="col box-1">
-                    <a href=""><img class="project-item" src="images/portfolio-1.png"></a>
-                    <p>First project thing</p>
+                    <img class="project-item" src="images/portfolio-1.png" alt="Project 1">
+                    <p class="proj-name">Number Guessing Game</p>
                 </div>
                 <div class="col box-2">
-                    <a href=""><img class="project-item" src="images/portfolio-2.png"></a>
-                    <p>Second project thing</p>
+                    <img class="project-item" src="images/portfolio-2.png" alt="Project 2">
+                    <p class="proj-name">Palindrome Checker</p>
                 </div>
                 <div class="col box-3">
-                    <a href=""><img class="project-item" src="images/portfolio-3.png"></a>
-                    <p>Third project thing</p>
+                    <img class="project-item" src="images/portfolio-3.png" alt="Project 3">
+                    <p class="proj-name">Tip Calculator</p>
                 </div>
                 <div class="col box-4">
-                    <a href=""><img class="project-item" src="images/portfolio-4.png"></a>
-                    <p>Fourth project thing</p>
+                    <img class="project-item" src="images/portfolio-4.png" alt="Project 4">
+                    <p class="proj-name">Weight Converter</p>
                 </div>
                 <div class="col box-5">
-                    <a href=""><img class="project-item" src="images/portfolio-5.png"></a>
-                    <p>Fifth project thing</p>
+                    <img class="project-item" src="images/portfolio-5.png" alt="Project 5">
+                    <p class="proj-name">Circle Clicker</p>
                 </div>
                 <div class="col box-6">
-                    <a href=""><img class="project-item" src="images/portfolio-6.png"></a>
-                    <p>Sixth project thing</p>
+                    <img class="project-item" src="images/portfolio-6.png" alt="Project 6">
+                    <p class="proj-name">Height Converter</p>
                 </div>
             </div>
-        </section>
-        <section id="skills-section">
-            <div id="skill">
-                <h2>Skills:</h2>
+            <div id="hobbies" class="hobby-div">
+                <h2 class="hobby-title">Hobbies</h2>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Being Awesome</li>
-                    <li>Playing Video Games</li>
-                    <li>Talking into a microphone</li>
-                    <li>Video Editing</li>
+                    <li>Reading</li>
+                    <li>Manga</li>
+                    <li>Video Games</li>
+                    <li>Ukulele</li>
+                    <li>YouTube</li>
                 </ul>
             </div>
-        </section>
-        <section id="contact-me">
-            <h3>Contact Me:</h3>
-            <div id="contact-info">
-                <ul>
-                    <li><a href="mailto: scpour@gmail.com">Email</a></li>
-                    <li><a href="https://twitter.com/codeandcreate92">Twitter</a></li>
-                    <li><a href="https://www.upwork.com/freelancers/~01382d0023424f3319">Upwork</a></li>
-                    <li><a href="https://www.linkedin.com/in/shaun-pour-4a1227101/">LinkedIn</a></li>
-                    <li><a href="https://github.com/DarkPhoenixNinja92">GitHub</a></li>
-                    <li><a href="https://codepen.io/scpour92">CodePen</a></li>
-                </ul>
-            </div>
-        </section>
     </div>
+    </main>
     <footer>
-        <nav class="main-nav footer-nav ">
-            <h2>Shaun Pour</h2>
+        <div id="contact" class="contact-info">
+            <h3 id="contact-me">Contact Me</h3>
+            <p class="contact-text">If you're interested in working together or want to chat about something, I'd love to hear from you!</p>
+            <div class="contact-details">
+                <p class="my-phone">Phone: +1(111) 555-1234</p>
+                <p class="my-email">Email: shaunpour@hotmail.com</p>
+            </div>
+        </div>
+        <div class="footer-name">
+            <p class="my-footer-name">Shaun Pour</p>
+            <a id="go-home" href="#home">Back to Top</a>
+        </div>
+        <div class="footer-links">
             <ul class="footer-nav">
-                <li class="top"><a href="#top">back to top</a></li>
-                <li class="nav-link "><a class="name " href="#home ">Home</a></li>
-                <li class="nav-link "><a class="name " href="#project-portfolio ">Portfolio</a></li>
-                <li class="nav-link "><a class="name " href="#skills-section ">Skills</a></li>
-                <li class="nav-link "><a class="name " href="#contact-me ">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </footer>
 </body>
 
