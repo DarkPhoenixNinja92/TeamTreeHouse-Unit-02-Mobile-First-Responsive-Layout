@@ -11,83 +11,85 @@
 
 <body>
     <header>
-        <nav class="main-nav">
-            <div class="nav-wrapper">
-                <ul class="nav" id="nav-mobile">
-                    <li class="nav-link"><a class="active" href="#home">Home</a></li>
-                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav-link"><a href="#hobbies">Hobbies</a></li>
-                    <li class="nav-link"><a href="#contact">Contact</a></li>
-                </ul>
-                <h1 id="home" class="my-name">Shaun Pour</h1>
-            </div>
+        <h1 id="top" class="title-name">Shaun Pour</h1>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-itm"><a href="#top">Home</a></li>
+                <li class="nav-itm"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-itm"><a href="#hobbies">Hobbies</a></li>
+                <li class="nav-itm"><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="flex">
-            <img class="portrait" src="images/Me.jpg" alt="image of me">
-            <p class="description">Hi! I'm a front-end web developer student who loves learning<br> and trying new things! I recently finished learning front-end<br> development at Treehouse and am eager to put my skills to use.</p>
-
-            <h2 id="portfolio" class="portfolio-title">Portfolio</h2>
-            <div class="container clearfix">
-                <div class="col box-1">
-                    <img class="project-item" src="images/portfolio-1.png" alt="Project 1">
-                    <p class="proj-name">Number Guessing Game</p>
+        <div class="section-1">
+            <img class="portrait-me" src="images/Me.jpg" alt="My Glorious Self">
+            <p class="intro-descr">Hi! I'm a front end developer student learning about responsive design. I am currently based out of Meadowview, Virginia in the United States with a plan to move to England or Germany someday. In my free time, I enjoy reading, manga, anime,
+                video games and playing the ukulele.</p>
+        </div>
+        <div class="portfolio-container">
+            <div id="portfolio">
+                <h2 class="portfolio-title">Portfolio</h2>
+                <div class="project">
+                    <img src="images/portfolio-1.png" alt="Portfolio">
+                    <h3 class="proj-title">Project Portfolio</h3>
+                    <p class="proj-descr">This project shows a rudimentary portfolio where I display my past projects to interested parties.</p>
                 </div>
-                <div class="col box-2">
-                    <img class="project-item" src="images/portfolio-2.png" alt="Project 2">
-                    <p class="proj-name">Palindrome Checker</p>
+                <div class="project">
+                    <img src="images/portfolio-2.png" alt="Guessing Game">
+                    <h3 class="proj-title">Number Guessing Game</h3>
+                    <p class="proj-descr">This project shows a game which generates a random number and tasks the user to guess what number was chosen with feedback based on how close the guess was.</p>
                 </div>
-                <div class="col box-3">
-                    <img class="project-item" src="images/portfolio-3.png" alt="Project 3">
-                    <p class="proj-name">Tip Calculator</p>
+                <div class="project">
+                    <img src="images/portfolio-3.png" alt="Circle Clicker">
+                    <h3 class="proj-title">Circle Clicker Game</h3>
+                    <p class="proj-descr">This project shows a game which generates random circular shapes and then measures how long it takes the user to click on the shape with the speed of arrival for the next shape and the color of the shape being randomly generated.</p>
                 </div>
-                <div class="col box-4">
-                    <img class="project-item" src="images/portfolio-4.png" alt="Project 4">
-                    <p class="proj-name">Weight Converter</p>
+                <div class="project">
+                    <img src="images/portfolio-4.png" alt="Palindrome">
+                    <h3 class="proj-title">Palindrome Checker</h3>
+                    <p class="proj-descr">This project shows an application called a palindrome checker. It takes input from a user and determines if the text entered is the same forward and backwards and prints a line of text based on the outcome.</p>
                 </div>
-                <div class="col box-5">
-                    <img class="project-item" src="images/portfolio-5.png" alt="Project 5">
-                    <p class="proj-name">Circle Clicker</p>
+                <div class="project">
+                    <img src="images/portfolio-5.png" alt="Quoter">
+                    <h3 class="proj-title">Random Quote Generator</h3>
+                    <p class="proj-descr">This project randomly displays quotes upon request. It has a precreated set of quotes stored and will pick one at random and print the quote with the author's name when the user presses the relevant button.</p>
                 </div>
-                <div class="col box-6">
-                    <img class="project-item" src="images/portfolio-6.png" alt="Project 6">
-                    <p class="proj-name">Height Converter</p>
+                <div class="project">
+                    <img src="images/portfolio-6.png" alt="Travel Blog">
+                    <h3 class="proj-title">Travel Blog</h3>
+                    <p class="proj-descr">This project shows a multi-page website which includes travel tips, a blog, personal information and a contact form.</p>
                 </div>
             </div>
-            <div id="hobbies" class="hobby-div">
-                <h2 class="hobby-title">Hobbies</h2>
-                <ul>
-                    <li>Reading</li>
-                    <li>Manga</li>
-                    <li>Video Games</li>
-                    <li>Ukulele</li>
-                    <li>YouTube</li>
-                </ul>
-            </div>
         </div>
-    </main>
-    <footer>
-        <div id="contact" class="contact-info">
-            <h3 id="contact-me">Contact Me</h3>
-            <p class="contact-text">If you're interested in working together or want to chat about something, I'd love to hear from you!</p>
-            <div class="contact-details">
-                <p class="my-phone">Phone: +1(111) 555-1234</p>
-                <p class="my-email">Email: shaunpour@hotmail.com</p>
-            </div>
-        </div>
-        <div class="footer-name">
-            <p class="my-footer-name">Shaun Pour</p>
-            <a id="go-home" href="#home">Back to Top</a>
-        </div>
-        <div class="footer-links">
-            <ul class="footer-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <div id="hobbies">
+            <h2>Hobbies</h2>
+            <ul class="hobby-list">
+                <li class="hobby-itm">Manga</li>
+                <li class="hobby-itm">Anime</li>
+                <li class="hobby-itm">Video Games</li>
+                <li class="hobby-itm">Video Editing</li>
+                <li class="hobby-itm">Reading</li>
+                <li class="hobby-itm">Ukulele</li>
+                <li class="hobby-itm">Watching YouTube</li>
             </ul>
         </div>
+    </main>
+    <div id="contact" class="contact-div">
+        <h2>Contact</h2>
+        <p class="descr-contact">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p class="phone">Phone: <a class="contact-info" href="">+1 (111) 555-1234</a></p>
+        <p class="email">Email: <a class="contact-info" href="">shaunpour1234@hotmail.com</a></p>
+    </div>
+    <footer>
+        <p class="footer-name">Shaun Pour</p>
+        <a class="top" href="#top">Back to Top</a>
+        <ul class="nav-footer">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
     </footer>
 </body>
 
