@@ -116,55 +116,22 @@ footer {
     display: none;
 }
 
-@media screen and (min-width: 767px) {
-    .nav-list {
+@media screen and (min-width: 768px) {
+    #portfolio {
         display: flex;
-        margin: auto;
-        width: 330px;
-    }
-    .section-1 {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .portrait-me {
-        padding-top: 0;
-        width: 44%;
-        height: auto;
-    }
-    .intro-descr {
-        width: 66%;
-        padding-right: 25px;
-        text-align: left;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        padding: 10px;
+        margin: 0 auto;
+        font-family: 'Otomanopee One', sans-serif;
     }
     .project {
-        float: left;
-        width: 45%;
-        margin: auto;
-    }
-    .project:nth-child(even) {
-        margin-right: 10%;
-    }
-    .proj-descr {
-        padding: 0 50px;
-    }
-    .contact-div {
-        max-width: 75%;
-        margin: auto;
-    }
-    .descr-contact {
-        margin-bottom: 50px;
-    }
-    .top {
-        display: none;
-    }
-    .nav-footer {
-        display: flex;
-        font-family: 'Otomanopee One', sans-serif;
+        margin: 10px;
+        min-height: 250px;
+        color: white;
         text-align: center;
-        color: rgb(57, 57, 57);
-    }
-    .nav-footer li {
-        list-style: none;
-        padding-left: 20px;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        flex-basis: calc(50% - 20px);
     }
 }
