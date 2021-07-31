@@ -16,6 +16,10 @@ nav li {
     padding: 20px;
 }
 
+ul {
+    padding-left: 0;
+}
+
 h2 {
     text-transform: uppercase;
 }
@@ -27,6 +31,10 @@ body {
 a:hover {
     text-decoration: underline;
     color: orange;
+}
+
+.title-name {
+    font-size: 30px;
 }
 
 .portrait-me {
@@ -43,10 +51,13 @@ a:hover {
 
 .nav-itm a:visited,
 a:link,
-a:hover,
 a:active {
     text-decoration: none;
-    font-style: none;
+}
+
+.nav-itm a:hover {
+    text-decoration: underline;
+    color: orange;
 }
 
 .portfolio-container {
@@ -59,12 +70,10 @@ a:active {
     list-style-position: inside;
     font-weight: initial;
     text-transform: none;
-    padding: auto;
 }
 
 .contact-info a {
     text-decoration: none;
-    font-style: none;
 }
 
 .top {
@@ -96,12 +105,15 @@ h3 {
     color: rgb(89, 88, 88);
 }
 
+#hobbies {
+    padding-bottom: 80px;
+}
+
 #top a:link,
 a:hover,
 a:visited,
 a:active {
     text-decoration: none;
-    font-style: none;
 }
 
 footer {
@@ -117,6 +129,39 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .top {
+        display: none;
+    }
+    .nav-list {
+        width: 335px;
+        display: flex;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    .section-1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .portrait-me {
+        padding-top: 0;
+        width: 33%;
+        height: auto;
+    }
+    .intro-descr {
+        width: 66%;
+        padding-right: 25px;
+        font-size: 1.25em;
+    }
+    .nav-footer {
+        display: flex;
+        font-family: 'Otomanopee One', sans-serif;
+        text-align: center;
+        color: rgb(57, 57, 57);
+    }
+    .nav-footer li {
+        list-style: none;
+        padding-left: 20px;
+    }
     #portfolio {
         display: flex;
         flex-wrap: wrap;
@@ -133,5 +178,45 @@ footer {
         letter-spacing: 1px;
         padding-top: 5px;
         flex-basis: calc(50% - 20px);
+    }
+    .portfolio-title {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-list {
+        position: relative;
+        left: 38%;
+        bottom: 120px;
+    }
+    .title-name {
+        text-align: left;
+        position: relative;
+        bottom: 30px;
+    }
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1100px;
+        padding: 10px;
+        margin: 0 auto;
+        font-family: 'Otomanopee One', sans-serif;
+    }
+    .project {
+        margin: 10px;
+        min-height: 250px;
+        color: white;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        flex-basis: calc(33.33% - 20px);
+    }
+    .portfolio-title {
+        flex-basis: 100%;
     }
 }
