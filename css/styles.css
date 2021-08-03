@@ -46,8 +46,7 @@ a:hover {
 }
 
 .nav-list {
-    position: relative;
-    right: 5%;
+    justify-content: center;
 }
 
 .nav-itm a:visited,
@@ -102,7 +101,8 @@ h3 {
 }
 
 .project {
-    padding: 10px 10px 25px auto;
+    padding: 10px 10px 25px 10px;
+    margin-bottom: 10px;
     background-color: darkslateblue;
     color: white;
 }
